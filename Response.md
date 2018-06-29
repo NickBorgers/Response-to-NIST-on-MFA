@@ -82,6 +82,7 @@ Biometric authentication cannot be used for remote authentication of users, it c
 # Summary
 
 NIST Term | NIST Claim | My Claim
+----------|------------|----------
 Multi-Factor OTP Device | 2FA | 1FA
 Multi-Factor Cryptographic Software | 2FA | 1FA
 Multi-Factor Cryptographic Device | 2FA | 1FA
