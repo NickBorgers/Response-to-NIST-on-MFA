@@ -11,7 +11,7 @@ Unfortunately, the same standard goes on to define a “[multi-factor authenticato
 > An authenticator that provides more than one distinct authentication factor, such as a cryptographic authentication device with an integrated biometric sensor that is required to activate the device.
 
 [SP 800-63B](https://pages.nist.gov/800-63-3/sp800-63b.html#5152-multi-factor-otp-verifiers) further clarifies the distinction between a single factor authenticator and a multi-factor authenticator. I restate the distinction made in the 800-63 suite as:
-* A single factor authenticator is one that does not, itself, require authentication to generate a valid OTP
+* A single-factor authenticator is one that does not, itself, require authentication to generate a valid OTP
 * A multi-factor authenticator is one that, itself, requires authentication to generate a valid OTP
 
 This is, at best, prone to misunderstanding. At worst, a standard has been defined which allows authentication schemes requiring compromise of a single factor to __to be understood__ as a multi-factor authentication system.
@@ -48,7 +48,7 @@ However, the token still fails if:
 
 There are two options for protecting the authenticator token’s secret key with encryption laid out in 800-63B:
 * Derive an encryption key from a memorized secret, and encrypt the authenticator token’s secret key
-  * NIST specifies that the memorized secret be “at least 6 decimal digits in length”; trivially cracked if the ciphertexts are available to a modestly capable adversary.
+  * NIST specifies that the memorized secret be “at least 6 decimal digits in length”; trivially cracked if the ciphertext is available to a modestly capable adversary.
 * Protect an encryption key in a device which requires physical biometric authentication, and encrypt the authenticator token’s secret key
   * The protection is contingent on the device resisting compromise; this protection is tautological.
 
