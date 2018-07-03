@@ -68,7 +68,7 @@ Placing the hard token in a biometric safe would not make this three-factor auth
 ## It is possible to perform MFA with a single value provided to the verifier
 Software OTP authenticators which can generate OTPs may only be able to generate valid OTPs when additionally provided with a memorized secret. This is not encryption of the OTP key with the memorized secret, but instead using both the memorized secret and the time or sequence number to generate a valid OTP. An invalid memorized secret, or a null/empty memorized secret, still allows the generation of an OTP value; just not a valid one.
 
-The verifier is only presented with a single OTP, but must combine both the authenticator’s OTP key and the memorized secret to verify the validity of the presented OTP. The difference is that the authenticator OTP key alone is not sufficient to produce a valid OTP: it is not a single factor of authentication.
+The verifier is only presented with a single OTP, but must combine both the authenticator’s OTP key and the memorized secret to verify the validity of the presented OTP. The difference is that the authenticator OTP key alone is not sufficient to produce a valid OTP: the single factor of authentication cannot be used to authenticate.
 
 Notably, memorized secrets used in such schemes typically short and numeric, e.g. a PIN. This often results in a relatively weak memorized secret. Where a high assurance authentication is required, such as time of a session establishment, a separate memorized secret conforming to the requirements in SP 800-63-3 may be required as part of authentication in addition to the OTP which is technically MFA alone.
 
