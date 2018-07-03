@@ -1,8 +1,7 @@
 # NIST has Incorrectly Defined MFA OTP Authenticators
+#### A single factor of authentication presented to a [verifier](https://pages.nist.gov/800-63-3/sp800-63-3.html#verifier) can only provide a single factor of authentication.
 A flawed approach to multifactor authentication has been elevated to a standard, and we need to correct it. 
 The problematic approach is allowing a single [authentication factor](https://pages.nist.gov/800-63-3/sp800-63-3.html#-authentication-factor) to qualify as [multi-factor authentication](https://pages.nist.gov/800-63-3/sp800-63-3.html#multi-factor-authentication-mfa).
-
-A single factor of authentication presented to a [verifier](https://pages.nist.gov/800-63-3/sp800-63-3.html#verifier) can only provide a single factor of authentication.
 
 For all these terms I look to NIST’s SP [800-63-3](https://pages.nist.gov/800-63-3/sp800-63-3.html).
 
