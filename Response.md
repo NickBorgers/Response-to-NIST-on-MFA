@@ -3,9 +3,9 @@
 A flawed approach to multifactor authentication has been elevated to a standard, and we need to correct it. 
 The problematic approach is allowing a single [authentication factor](https://pages.nist.gov/800-63-3/sp800-63-3.html#-authentication-factor) to qualify as [multi-factor authentication](https://pages.nist.gov/800-63-3/sp800-63-3.html#multi-factor-authentication-mfa).
 
-For all these terms I look to NIST’s SP [800-63-3](https://pages.nist.gov/800-63-3/sp800-63-3.html).
+For all these terms I look to NIST’s SP [800-63-3](https://pages.nist.gov/800-63-3/sp800-63-3.html) [Appendix A](https://pages.nist.gov/800-63-3/sp800-63-3.html#def-and-acr).
 
-Unfortunately, goes on to define a “[multi-factor authenticator](https://pages.nist.gov/800-63-3/sp800-63-3.html#multi-factor-authenticator)” in Appendix A:
+Unfortunately, the same standard goes on to define a “[multi-factor authenticator](https://pages.nist.gov/800-63-3/sp800-63-3.html#multi-factor-authenticator)” in Appendix A:
 > Multi-Factor Authenticator
 > 
 > An authenticator that provides more than one distinct authentication factor, such as a cryptographic authentication device with an integrated biometric sensor that is required to activate the device.
