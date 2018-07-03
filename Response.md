@@ -14,7 +14,7 @@ Unfortunately, the same standard goes on to define a “[multi-factor authenticato
 * A single factor authenticator is one that does not, itself, require authentication to generate a valid OTP
 * A multi-factor authenticator is one that, itself, requires authentication to generate a valid OTP
 
-This is, at best, prone to misunderstanding. At worst, a standard has been defined which allows authentication schemes requiring compromise of a single factor to defeat what is __understood to be__ a multi-factor authentication system.
+This is, at best, prone to misunderstanding. At worst, a standard has been defined which allows authentication schemes requiring compromise of a single factor to __to be understood__ as a multi-factor authentication system.
 
 ## What is the problem?
 The verifier of an OTP is only ever provided with that OTP. This is the single factor of authentication provided to the verifier. [800-63B §5.1.5.2](https://pages.nist.gov/800-63-3/sp800-63b.html#5152-multi-factor-otp-verifiers) recognizes this fact (emphasis mine): 
