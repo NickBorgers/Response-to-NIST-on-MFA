@@ -94,9 +94,6 @@ Multi-Factor Cryptographic Device | 2FA | 1FA
 To provide multi-factor authentication a verifier must use multiple, different, and discrete information to perform authentication. This requires either multiple values to be conveyed to the verifier, or the conveyance of a value whose verification and creation requires multiple factors of authentication. Examples include:
 * An OTP that must be created or verified by combining a memorized secret and an OTP authenticator key (2FA)
 * An OTP and a memorized secret (2FA)
-* A digitally signed look-up code (2FA)
-* Proof-of-possession of a cryptographic key, a memorized secret, and an OTP (3FA)
-* Proof-of-possession of a cryptographic key, a memorized secret, and a look-up code (3FA)
-* A valid biometric physically presented to the verifier, a memorized secret, and proof-of-possession of a cryptographic key (3FA)
+* A valid biometric physically presented to the verifier, a memorized secret, and proof-of-possession of a private key (3FA)
 
 Depending on requirements, biometric or password protection of OTP authenticators may be appropriate, but it cannot transform the single-factor authenticator into a “multi-factor authenticator”. 
