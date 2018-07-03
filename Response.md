@@ -66,7 +66,7 @@ This scheme provides the verifier with two distinct factors of authentication:
 Placing the hard token in a biometric safe would not make this three-factor authentication, because the act of authentication is performed by the verifier. Whatever protections exist for the factors cannot be relied upon by the verifier: the authentication decision must be made only with what is known.
 
 ## It is possible to perform MFA with a single value provided to the verifier
-Software OTP authenticators which can generate OTPs, may only be able to generate valid OTPs when additionally provided with a memorized secret. This is not encryption of the OTP key with the memorized secret, but instead using both the memorized secret and the time or sequence number to generate a valid OTP. An invalid memorized secret, or a null/empty memorized secret, still allows the generation of an OTP value; just not a valid one.
+Software OTP authenticators which can generate OTPs may only be able to generate valid OTPs when additionally provided with a memorized secret. This is not encryption of the OTP key with the memorized secret, but instead using both the memorized secret and the time or sequence number to generate a valid OTP. An invalid memorized secret, or a null/empty memorized secret, still allows the generation of an OTP value; just not a valid one.
 
 The verifier is only presented with a single OTP, but must combine both the authenticator’s OTP key and the memorized secret to verify the validity of the presented OTP. The difference is that the authenticator OTP key alone is not sufficient to produce a valid OTP: it is not a single factor of authentication.
 
