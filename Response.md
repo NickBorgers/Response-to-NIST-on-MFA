@@ -79,7 +79,7 @@ Physical biometric information can only be used as an authentication factor to a
 
 If the device collecting biometric information is separate from the verifier, the verifier of the biometric information is receiving a data object. This data object can be copied, saved, replayed, etc. The verifier is not performing a biometric authentication, it is acting as a credential store to provide a verification result to the device collecting the information.
 
-If the device is locally authenticating the biometrics, verifier of the remote system is not authenticating the user’s biometrics. The remote system may choose to trust the device which has performed biometric authentication of the user, but authentication of the device and determination that it is trusted must not imply that the user has biometrically authenticated to the remote system. The identity of the user is merely __asserted__ by the device  to the remote system, and the remote system must trust that assertion.
+If the device is locally authenticating the biometrics, a verifier on the remote system is not authenticating the user’s biometrics. The remote system may choose to trust the device which has performed biometric authentication of the user, but authentication of the device and determination that it is trusted must not imply that the user has biometrically authenticated to the remote system. The identity of the user is merely __asserted__ by the device to the remote system, and the remote system must trust that assertion.
 
 Biometric authentication cannot be used for remote authentication of users, it can only be used to authenticate a user to a device.
 
