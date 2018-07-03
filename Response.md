@@ -70,7 +70,7 @@ Software OTP authenticators which can generate OTPs may only be able to generate
 
 The verifier is only presented with a single OTP, but must combine both the authenticator’s OTP key and the memorized secret to verify the validity of the presented OTP. The difference is that the authenticator OTP key alone is not sufficient to produce a valid OTP: the single factor of authentication cannot be used to authenticate.
 
-Notably, memorized secrets used in such schemes typically short and numeric, e.g. a PIN. This often results in a relatively weak memorized secret. Where a high assurance authentication is required, such as time of a session establishment, a separate memorized secret conforming to the requirements in SP 800-63-3 may be required as part of authentication in addition to the OTP which is technically MFA alone.
+Notably, memorized secrets used in such schemes are likely to be short and numeric, e.g. a PIN. This results in a relatively weak memorized secret. Where a high assurance authentication is required, such as at time of a session establishment, a separate memorized secret conforming to the requirements in SP 800-63-3 may be required as part of authentication in addition to the OTP which is technically MFA alone.
 
 ## On Biometrics
 _This is in notable contrast to [800-63B §5.2.3](https://pages.nist.gov/800-63-3/sp800-63b.html#biometric_use)._
