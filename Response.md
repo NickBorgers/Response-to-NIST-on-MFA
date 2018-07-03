@@ -73,7 +73,7 @@ The verifier is only presented with a single OTP, but must combine both the auth
 Notably, memorized secrets used in such schemes typically short and numeric, e.g. a PIN. This often results in a relatively weak memorized secret. Where a high assurance authentication is required, such as time of a session establishment, a separate memorized secret conforming to the requirements in SP 800-63-3 may be required as part of authentication in addition to the OTP which is technically MFA alone.
 
 ## On Biometrics
-_This is a direct rebuke of much of what is laid out in [800-63B §5.2.3](https://pages.nist.gov/800-63-3/sp800-63b.html#biometric_use)._
+_This is in notable contrast to [800-63B §5.2.3](https://pages.nist.gov/800-63-3/sp800-63b.html#biometric_use)._
 
 Physical biometric information can only be used as an authentication factor to a device, it cannot be used by a remote verifier. A sensor is used to collect information about a physical object submitted for biometric authentication. This information is then used to perform a biometric comparison which may, or may not, result in a match.
 
