@@ -10,7 +10,7 @@ Unfortunately, the same standard goes on to define a “[multi-factor authenticato
 > 
 > An authenticator that provides more than one distinct authentication factor, such as a cryptographic authentication device with an integrated biometric sensor that is required to activate the device.
 
-800-63B further clarifies the distinction between a single factor authenticator and a multi-factor authenticator. I restate the distinction made in the 800-63 suite as:
+[SP 800-63B](https://pages.nist.gov/800-63-3/sp800-63b.html#5152-multi-factor-otp-verifiers) further clarifies the distinction between a single factor authenticator and a multi-factor authenticator. I restate the distinction made in the 800-63 suite as:
 * A single factor authenticator is one that does not, itself, require authentication to generate a valid OTP
 * A multi-factor authenticator is one that, itself, requires authentication to generate a valid OTP
 
