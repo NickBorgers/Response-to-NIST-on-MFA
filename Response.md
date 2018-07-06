@@ -17,7 +17,7 @@ Unfortunately, the same standard goes on to define a “[multi-factor authenticato
 This is, at best, prone to misunderstanding. At worst, a standard has been defined which allows authentication schemes requiring compromise of a single factor to __to be understood__ as a multi-factor authentication system.
 
 ## What is the problem?
-The verifier of an OTP is only ever provided with that OTP. This is the single factor of authentication provided to the verifier. [800-63B §5.1.5.2](https://pages.nist.gov/800-63-3/sp800-63b.html#5152-multi-factor-otp-verifiers) recognizes this fact (emphasis mine): 
+The verifier of a one-time password (OTP) is only ever provided with that OTP. This is the single factor of authentication provided to the verifier. [800-63B §5.1.5.2](https://pages.nist.gov/800-63-3/sp800-63b.html#5152-multi-factor-otp-verifiers) recognizes this fact (emphasis mine): 
 > Multi-factor OTP verifiers effectively duplicate the process of generating the OTP used by the authenticator, but __without the requirement that a second factor be provided__.
 
 [§5.1.5.2](https://pages.nist.gov/800-63-3/sp800-63b.html#5152-multi-factor-otp-verifiers) includes a requirement for the verifier to, “when a multi-factor OTP authenticator is being associated with a subscriber account”:
@@ -28,7 +28,7 @@ It does not matter what the device is; this requirement enables misunderstanding
 The only factor of authentication available to the verifier at the time of authentication is an OTP demonstrating possession of the authenticator token’s secret key.
 
 The authenticator is a single point of compromise; it must only ever be a single factor of authentication. An authentication requirement on an authenticator device does protect that authentication factor, but does not change the nature of the authenticator it protects. 
-Placing a key in a combination safe does not provide the associated door with “multi-factor authentication”. The adversary still only requires the key.
+Placing the key to a vehicle in a combination safe does not provide the vehicle with “multi-factor authentication”. The adversary still only requires the key to drive the vehicle.
 
 # Application to Modern OTP Tokens
 ## Software OTP Authenticators
